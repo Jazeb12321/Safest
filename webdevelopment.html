@@ -1,0 +1,482 @@
+<html>
+
+
+
+
+<head>
+    
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <style type="text/css">
+    
+        body{
+            
+        
+        }
+        
+        *{
+             margin:0;
+            padding:0;
+           
+            font-family: Century Gothic;
+          
+            
+            
+        }
+        
+        header{
+           margin-top: 5%;
+        
+             background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(business.jpg);
+        
+             height: 80vh;
+            background-size: cover;
+            background-position: center;
+            
+        }
+        
+        #text{
+            
+            color:bisque;
+            padding-left: 5%;
+            padding-top: 5%;
+            font-family:cursive;
+            font-size: 140%;
+        }
+        
+        #text2{
+            
+            
+         
+            padding-left: 54%;
+             color:bisque;
+            font-family:cursive;
+            font-size: 140%;
+            padding-top: 3%;            
+
+           
+        }
+        
+        ul{
+            
+            list-style-type: none;
+            float: right;
+            margin-top: 25px;
+            
+        }
+    
+    
+        ul li{
+            
+            display: inline-block;
+            padding-left: 10px;
+            line-height: 50px;
+        }
+        
+        ul li a{
+            font-size:140%;
+            text-decoration: none;
+            color: orangered;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: 0.6s ease;
+    
+        }
+        ul li a:hover{
+            
+            background-color: white;
+            color: green;
+            border: 1px solid green;
+            text-decoration: none;
+            
+        }
+        
+
+        
+        .logo img{
+            
+            
+            float: left;
+           width: 10%;
+            height: auto;
+            margin-top: -1%;
+            
+        }
+        
+        .main{
+            
+            max-width: 1500px;
+            margin:auto;
+            height: auto;
+      background-color: white;
+        }
+        .main ul li{
+            
+         display: inline-block;
+            
+        }
+        
+        ul li.active a{
+            
+              border: 1px solid green;
+            color: orange;
+            
+            
+            
+        }
+    
+        .title{
+            
+          padding-top: 5%;
+            text-align: center;
+        }
+        .title h1{
+            
+            
+            color: white;
+            font-size: 600%;
+            
+            
+        }
+    
+            
+            
+            
+            
+   
+        .zweiteueber h1{
+            
+            
+            padding-top:2%;
+        font-size: 300%;
+    text-align: center;
+        color: black;
+           font-family: 'Raleway', sans-serif;
+     opacity: 0.2;
+        }
+        
+        .logo{
+            
+            
+            padding-top: 2%;
+            
+   
+        }
+        
+        .eins{
+            margin-top: 3%;
+           margin-left: 20%;
+           font-size: 400%;
+            background-color: aqua;
+            max-width: 5%;
+            border-radius: 50px;
+            text-align: center;
+            
+            
+            
+        }
+        
+
+            
+            
+  
+        
+        .dropdown{
+            
+             position: relative;
+  display: inline-block;
+            
+        }
+        
+        .dropdown-content{
+            
+             display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+            
+            
+        }
+        
+        .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 120%;
+}
+        
+        .dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+   
+        .dropdownone{
+            
+             position: relative;
+  display: inline-block;
+            
+        }
+        
+        .dropdown-contentone{
+            
+             display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+            
+            
+        }
+        
+        .dropdown-contentone a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 120%;
+}
+        
+        .dropdown-contentone a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+        
+        .tabelle{
+            
+            width: 0.2%;
+            background-color: orange;
+            height: 90%;
+            margin-left: 50%;
+            margin-top: -45%;
+        }
+        
+        .small{
+            margin-top: 15%;
+           margin-left: 70%;
+            font-size: 250%;
+        }
+  .big{
+           margin-top: -2.5%;
+           margin-left: 10%;
+            font-size: 250%;
+        }
+
+        
+            
+        body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+        input[type=number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+   margin-right: 55%;
+    margin-top: 10%;
+width: 40%;
+
+}
+        
+        #email{
+            
+            width: 100%;
+            height: 40px;
+            margin-bottom: 8px;
+        
+        }
+        
+        #contactform{
+            
+            
+            background-color: orange;
+            width: 215px;
+        }
+        
+        .containerone{
+            
+            
+             border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+   margin-left:55%;;
+
+width: 40%;
+              margin-top: -44.2%; 
+            
+        }
+        
+    </style>
+    
+    
+    
+    
+    </head>
+
+<body>
+
+   <nav>
+        <div class="main">
+        <div class="logo">
+        
+       
+       <img src="LogoMakr3.png">
+        
+        
+        </div>
+        <ul>
+        
+        <li><a href="index.html">Home</a></li>
+           
+            <li><a href="services.html">Services</a></li>
+             
+        <li><a href="#">Other Buisness Pasebilities</a></li>
+      
+        <li class="active"><a href="#">Jobs</a></li>
+              <li><a href="">Contact</a></li>
+        
+            </ul>
+        
+        
+        
+        
+      
+        
+
+        
+        </div>
+        
+    </nav>
+	 <header>
+    
+
+    
+    <div class="title"><h1>Safest Developer</h1></div>
+    <p id="text">Safest is a marketplace for top web developers,<br> engineers, programmers, coders, architects, and consultants. <br>Top companies and start-ups choose Toptal web freelancers<br> for their mission critical software projects.</p>
+    <p id="text2">This is a componany for devolpe a sofware website for youselfe.<br>This will your own privacy.<br>Hire us most for few days and let create a cheap website or homepages. </p>
+    </header>
+    
+	<div class="small"><b>Your's Product Details</b></div>
+     
+	<div class="big"><b>Your's Demand Details</b></div>
+      
+
+       
+<form action="mailto:newview2025@gmail.com" method="post" enctype="text/plain">
+<div class="container">
+  
+    <label for="fname">Company Name</label>
+    <input type="text" id="name" name="firstname" placeholder="Your Company Name..">
+    <label for="lname">Product Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your Product Name..">
+    
+  <label for="Quantetie">Quantety</label>
+    <input type="number" id="qname" name="Quantety">
+      <label for="beispielFeldEmail1">Your Contact, email or Phone Number</label>
+    <input name="email" type="email" class="form-control" id="email" placeholder="Email-Adresse">
+    
+          <label for="Phone Number">Phone Number</label>
+    <input name="email" type="number" class="form-control" id="email" placeholder="123456789">
+    
+        <label for="Price">Your's estimated Price</label>
+    <input name="email" type="number" class="form-control" id="email" >
+    <label for="More Detail">More Detail about your and your's Product</label>
+    <textarea id="subject" name="subject" placeholder="More Details.." style="height:200px"></textarea>
+     <input type="submit" value="Send">
+      <input type="reset" value="Reset">
+   
+  
+</div>
+      
+        </form> 
+    
+    
+    
+    
+    
+    
+    
+    
+        
+    <form action="mailto:newview2025@gmail.com" method="post" enctype="text/plain">
+<div class="containerone">
+  
+    <label for="fname">Company Name</label>
+    <input type="text" id="name" name="firstname" placeholder="Your Company Name..">
+    <label for="lname">Product Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your Product Name..">
+    
+  <label for="Quantetie">Price Delivery</label>
+    <input type="number" id="qname" name="Price">
+      <label for="Email">Your Contact, email or Phone Number</label>
+    <input name="email" type="email" class="form-control" id="email" placeholder="Email-Adresse">
+    
+          <label for="Phone Number">Phone Number</label>
+    <input name="email" type="number" class="form-control" id="email" placeholder="123456789">
+    
+        <label for="Discount">Discount Possibulity</label>
+    <input name="email" type="number" class="form-control" id="email">
+    <label for="More Detail">More Detail about your and your's Product</label>
+    <textarea id="subject" name="subject" placeholder="More Details.." style="height:200px"></textarea>
+     <input type="submit" value="Send">
+      <input type="reset" value="Reset">
+   
+  
+</div>
+      
+        </form> 
+ 
+    <div class="tabelle">
+   
+  
+    
+    </div>
+
+    
+    
+    
+ 
+    <div class="tabelle">
+   
+  
+    
+    </div>
+    
